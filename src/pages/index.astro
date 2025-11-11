@@ -1,5 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+// Importar la imagen desde public
+const sofiaImage = '/sofia.jpg';
+const baseUrl = import.meta.env.BASE_URL;
 ---
 
 <Layout>
@@ -139,7 +143,7 @@ import Layout from '../layouts/Layout.astro';
 			<div class="about-content">
 				<div class="about-image">
 					<div class="image-container">
-						<img src="/sofia.jpg" alt="Dra. Sofia Villegas Solis" />
+						<img src={`${baseUrl}sofia.jpg`} alt="Dra. Sofia Villegas Solis" />
 					</div>
 				</div>
 				<div class="about-text">
