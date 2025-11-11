@@ -7,7 +7,10 @@ import Layout from '../layouts/Layout.astro';
 	<nav class="navbar">
 		<div class="container">
 			<div class="nav-brand">
-				<span>BUA</span>
+				<div class="brand-name">
+					<span class="letter-orange">B</span><span class="letter-green">U</span><span class="letter-blue">A</span>
+				</div>
+				<div class="brand-subtitle">Creado por: Dra. Sofia Villegas Solis</div>
 			</div>
 			<ul class="nav-menu">
 				<li><a href="#inicio">Inicio</a></li>
@@ -135,12 +138,8 @@ import Layout from '../layouts/Layout.astro';
 		<div class="container">
 			<div class="about-content">
 				<div class="about-image">
-					<div class="image-placeholder">
-						<svg width="200" height="200" viewBox="0 0 200 200" fill="none">
-							<circle cx="100" cy="100" r="90" fill="#f79143" opacity="0.2"/>
-							<circle cx="100" cy="80" r="35" fill="#f79143"/>
-							<path d="M40 160c0-33.137 26.863-60 60-60s60 26.863 60 60" fill="#f79143"/>
-						</svg>
+					<div class="image-container">
+						<img src="/sofia.jpg" alt="Dra. Sofia Villegas Solis" />
 					</div>
 				</div>
 				<div class="about-text">
@@ -355,11 +354,10 @@ import Layout from '../layouts/Layout.astro';
 		position: fixed;
 		top: 0;
 		width: 100%;
-		background: rgba(255, 255, 255, 0.95);
-		backdrop-filter: blur(10px);
-		box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+		background: white;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 		z-index: 1000;
-		padding: 1rem 0;
+		padding: 1.5rem 0;
 	}
 
 	.navbar .container {
@@ -370,29 +368,71 @@ import Layout from '../layouts/Layout.astro';
 
 	.nav-brand {
 		display: flex;
-		align-items: center;
-		gap: 12px;
-		font-size: 1.5rem;
+		flex-direction: column;
+		gap: 0.25rem;
+	}
+
+	.brand-name {
+		font-size: 2rem;
 		font-weight: 700;
-		color: var(--orange);
+		letter-spacing: 0.5px;
+	}
+
+	.letter-orange {
+		color: #f79143;
+	}
+
+	.letter-green {
+		color: #d5f4ae;
+		text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+	}
+
+	.letter-blue {
+		color: #bfe3f2;
+		text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+	}
+
+	.brand-subtitle {
+		font-size: 0.75rem;
+		font-weight: 400;
+		color: var(--gray);
+		text-transform: uppercase;
+		letter-spacing: 1px;
 	}
 
 	.nav-menu {
 		display: flex;
 		list-style: none;
-		gap: 2rem;
+		gap: 2.5rem;
 		align-items: center;
 	}
 
 	.nav-menu a {
 		text-decoration: none;
 		color: var(--dark);
-		font-weight: 500;
+		font-weight: 400;
+		font-size: 0.95rem;
 		transition: color 0.3s;
+		position: relative;
+	}
+
+	.nav-menu a::after {
+		content: '';
+		position: absolute;
+		bottom: -5px;
+		left: 0;
+		width: 0;
+		height: 2px;
+		background: var(--orange);
+		transition: width 0.3s;
 	}
 
 	.nav-menu a:hover {
 		color: var(--orange);
+	}
+
+	.nav-menu a:hover::after {
+		width: 100%;
 	}
 
 	.btn-contact {
@@ -403,6 +443,10 @@ import Layout from '../layouts/Layout.astro';
 		transition: transform 0.3s, box-shadow 0.3s;
 	}
 
+	.btn-contact::after {
+		display: none;
+	}
+
 	.btn-contact:hover {
 		transform: translateY(-2px);
 		box-shadow: 0 5px 15px rgba(247, 145, 67, 0.3);
@@ -410,7 +454,7 @@ import Layout from '../layouts/Layout.astro';
 
 	/* Hero Section */
 	.hero {
-		margin-top: 80px;
+		margin-top: 100px;
 		padding: 100px 0;
 		background: linear-gradient(135deg, var(--light-blue) 0%, var(--light-green) 100%);
 		position: relative;
@@ -626,11 +670,21 @@ import Layout from '../layouts/Layout.astro';
 		justify-content: center;
 	}
 
-	.image-placeholder {
-		background: white;
+	.image-container {
+		position: relative;
+		width: 100%;
+		max-width: 400px;
 		border-radius: 30px;
-		padding: 2rem;
-		box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+		overflow: hidden;
+		box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+		background: white;
+	}
+
+	.image-container img {
+		width: 100%;
+		height: auto;
+		display: block;
+		object-fit: cover;
 	}
 
 	.about-text h2 {
