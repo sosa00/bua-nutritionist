@@ -1,0 +1,911 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+	<!-- Navigation -->
+	<nav class="navbar">
+		<div class="container">
+			<div class="nav-brand">
+				<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<circle cx="20" cy="20" r="18" fill="#f79143"/>
+					<path d="M20 8C15.5817 8 12 11.5817 12 16C12 18.5 13.5 22 20 28C26.5 22 28 18.5 28 16C28 11.5817 24.4183 8 20 8Z" fill="#d5f4ae"/>
+					<circle cx="20" cy="16" r="3" fill="#fff"/>
+				</svg>
+				<span>BUA'</span>
+			</div>
+			<ul class="nav-menu">
+				<li><a href="#inicio">Inicio</a></li>
+				<li><a href="#servicios">Servicios</a></li>
+				<li><a href="#sobre-mi">Sobre Mí</a></li>
+				<li><a href="#contacto" class="btn-contact">Contacto</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- Hero Section -->
+	<section id="inicio" class="hero">
+		<div class="container">
+			<div class="hero-content">
+				<h1>Transforma tu Vida con <span class="highlight">Nutrición Consciente</span></h1>
+				<p class="hero-subtitle">Planes personalizados que se adaptan a tu estilo de vida, objetivos y necesidades únicas</p>
+				<div class="hero-buttons">
+					<a href="#contacto" class="btn btn-primary">Agenda tu Consulta</a>
+					<a href="#servicios" class="btn btn-secondary">Conoce más</a>
+				</div>
+			</div>
+			<div class="hero-image">
+				<div class="floating-card card-1">
+					<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#f79143" stroke-width="2">
+						<path d="M12 2L2 7l10 5 10-5-10-5z"/>
+						<path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+					</svg>
+					<p>Planes Personalizados</p>
+				</div>
+				<div class="floating-card card-2">
+					<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#f79143" stroke-width="2">
+						<circle cx="12" cy="12" r="10"/>
+						<path d="M12 6v6l4 2"/>
+					</svg>
+					<p>Seguimiento Continuo</p>
+				</div>
+				<div class="floating-card card-3">
+					<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#f79143" stroke-width="2">
+						<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+						<polyline points="22 4 12 14.01 9 11.01"/>
+					</svg>
+					<p>Resultados Reales</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Services Section -->
+	<section id="servicios" class="services">
+		<div class="container">
+			<div class="section-header">
+				<h2>Servicios Profesionales</h2>
+				<p>Soluciones integrales para tu bienestar nutricional</p>
+			</div>
+			<div class="services-grid">
+				<div class="service-card">
+					<div class="service-icon">
+						<svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+							<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+							<circle cx="12" cy="7" r="4"/>
+						</svg>
+					</div>
+					<h3>Consulta Personalizada</h3>
+					<p>Evaluación completa de tu estado nutricional, hábitos alimentarios y objetivos de salud para crear un plan único para ti.</p>
+				</div>
+				<div class="service-card">
+					<div class="service-icon">
+						<svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+							<rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+							<line x1="16" y1="2" x2="16" y2="6"/>
+							<line x1="8" y1="2" x2="8" y2="6"/>
+							<line x1="3" y1="10" x2="21" y2="10"/>
+						</svg>
+					</div>
+					<h3>Plan Nutricional</h3>
+					<p>Menús semanales adaptados a tus preferencias, con recetas saludables y lista de compras para facilitar tu día a día.</p>
+				</div>
+				<div class="service-card">
+					<div class="service-icon">
+						<svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+							<line x1="12" y1="1" x2="12" y2="23"/>
+							<path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+						</svg>
+					</div>
+					<h3>Nutrición Deportiva</h3>
+					<p>Optimiza tu rendimiento físico con estrategias nutricionales diseñadas para atletas y personas activas.</p>
+				</div>
+				<div class="service-card">
+					<div class="service-icon">
+						<svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+							<path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+						</svg>
+					</div>
+					<h3>Control de Peso</h3>
+					<p>Alcanza y mantén tu peso ideal de forma saludable y sostenible, sin dietas restrictivas ni efecto rebote.</p>
+				</div>
+				<div class="service-card">
+					<div class="service-icon">
+						<svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+							<path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
+							<path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/>
+						</svg>
+					</div>
+					<h3>Nutrición Clínica</h3>
+					<p>Manejo nutricional de condiciones como diabetes, hipertensión, colesterol alto y enfermedades digestivas.</p>
+				</div>
+				<div class="service-card">
+					<div class="service-icon">
+						<svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+							<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+							<circle cx="9" cy="7" r="4"/>
+							<path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+							<path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+						</svg>
+					</div>
+					<h3>Asesoría Familiar</h3>
+					<p>Educación nutricional para toda la familia, promoviendo hábitos saludables desde la infancia.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- About Section -->
+	<section id="sobre-mi" class="about">
+		<div class="container">
+			<div class="about-content">
+				<div class="about-image">
+					<div class="image-placeholder">
+						<svg width="200" height="200" viewBox="0 0 200 200" fill="none">
+							<circle cx="100" cy="100" r="90" fill="#f79143" opacity="0.2"/>
+							<circle cx="100" cy="80" r="35" fill="#f79143"/>
+							<path d="M40 160c0-33.137 26.863-60 60-60s60 26.863 60 60" fill="#f79143"/>
+						</svg>
+					</div>
+				</div>
+				<div class="about-text">
+					<h2>Sobre Mí</h2>
+					<p class="about-intro">Nutricionista certificada con más de 10 años de experiencia ayudando a personas a alcanzar sus objetivos de salud y bienestar.</p>
+					<p>Mi enfoque se basa en la nutrición basada en evidencia científica, combinada con un entendimiento profundo de que cada persona es única. No creo en las dietas de moda ni en las soluciones rápidas. Creo en crear hábitos sostenibles que transformen tu relación con la comida.</p>
+					<div class="credentials">
+						<div class="credential-item">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f79143" stroke-width="2">
+								<polyline points="20 6 9 17 4 12"/>
+							</svg>
+							<span>Licenciada en Nutrición y Dietética</span>
+						</div>
+						<div class="credential-item">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f79143" stroke-width="2">
+								<polyline points="20 6 9 17 4 12"/>
+							</svg>
+							<span>Especialización en Nutrición Clínica</span>
+						</div>
+						<div class="credential-item">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f79143" stroke-width="2">
+								<polyline points="20 6 9 17 4 12"/>
+							</svg>
+							<span>Certificación en Nutrición Deportiva</span>
+						</div>
+						<div class="credential-item">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f79143" stroke-width="2">
+								<polyline points="20 6 9 17 4 12"/>
+							</svg>
+							<span>+500 pacientes atendidos exitosamente</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Testimonials Section -->
+	<section class="testimonials">
+		<div class="container">
+			<div class="section-header">
+				<h2>Lo que Dicen Mis Pacientes</h2>
+				<p>Historias reales de transformación</p>
+			</div>
+			<div class="testimonials-grid">
+				<div class="testimonial-card">
+					<div class="stars">★★★★★</div>
+					<p class="testimonial-text">"Después de años luchando con mi peso, finalmente encontré un enfoque que funciona. Los planes son realistas y deliciosos. ¡Perdí 15 kg y me siento increíble!"</p>
+					<div class="testimonial-author">
+						<strong>María González</strong>
+						<span>Pérdida de peso</span>
+					</div>
+				</div>
+				<div class="testimonial-card">
+					<div class="stars">★★★★★</div>
+					<p class="testimonial-text">"Como atleta, necesitaba optimizar mi nutrición. El plan personalizado mejoró mi rendimiento y recuperación. ¡Totalmente recomendado!"</p>
+					<div class="testimonial-author">
+						<strong>Carlos Ramírez</strong>
+						<span>Nutrición deportiva</span>
+					</div>
+				</div>
+				<div class="testimonial-card">
+					<div class="stars">★★★★★</div>
+					<p class="testimonial-text">"Logré controlar mi diabetes tipo 2 con los cambios nutricionales. La atención es profesional, empática y efectiva. ¡Gracias por cambiar mi vida!"</p>
+					<div class="testimonial-author">
+						<strong>Ana Martínez</strong>
+						<span>Nutrición clínica</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact Section -->
+	<section id="contacto" class="contact">
+		<div class="container">
+			<div class="contact-content">
+				<div class="contact-info">
+					<h2>¿Lista para Comenzar?</h2>
+					<p class="contact-subtitle">Agenda tu primera consulta y da el primer paso hacia una vida más saludable</p>
+					<div class="contact-details">
+						<div class="contact-item">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+								<circle cx="12" cy="10" r="3"/>
+							</svg>
+							<div>
+								<strong>Ubicación</strong>
+								<p>Consultorio en el centro de la ciudad</p>
+							</div>
+						</div>
+						<div class="contact-item">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+							</svg>
+							<div>
+								<strong>Teléfono</strong>
+								<p>+34 123 456 789</p>
+							</div>
+						</div>
+						<div class="contact-item">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+								<polyline points="22,6 12,13 2,6"/>
+							</svg>
+							<div>
+								<strong>Email</strong>
+								<p>contacto@bua.com</p>
+							</div>
+						</div>
+						<div class="contact-item">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<circle cx="12" cy="12" r="10"/>
+								<polyline points="12 6 12 12 16 14"/>
+							</svg>
+							<div>
+								<strong>Horario</strong>
+								<p>Lun - Vie: 9:00 - 19:00</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="contact-form">
+					<form>
+						<div class="form-group">
+							<input type="text" placeholder="Nombre completo" required>
+						</div>
+						<div class="form-group">
+							<input type="email" placeholder="Email" required>
+						</div>
+						<div class="form-group">
+							<input type="tel" placeholder="Teléfono" required>
+						</div>
+						<div class="form-group">
+							<select required>
+								<option value="">Selecciona un servicio</option>
+								<option value="consulta">Consulta Personalizada</option>
+								<option value="plan">Plan Nutricional</option>
+								<option value="deportiva">Nutrición Deportiva</option>
+								<option value="peso">Control de Peso</option>
+								<option value="clinica">Nutrición Clínica</option>
+								<option value="familiar">Asesoría Familiar</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<textarea placeholder="Cuéntame sobre tus objetivos..." rows="4" required></textarea>
+						</div>
+						<button type="submit" class="btn btn-primary btn-full">Enviar Mensaje</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-content">
+				<div class="footer-brand">
+					<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<circle cx="20" cy="20" r="18" fill="#f79143"/>
+						<path d="M20 8C15.5817 8 12 11.5817 12 16C12 18.5 13.5 22 20 28C26.5 22 28 18.5 28 16C28 11.5817 24.4183 8 20 8Z" fill="#d5f4ae"/>
+						<circle cx="20" cy="16" r="3" fill="#fff"/>
+					</svg>
+					<span>BUA'</span>
+				</div>
+				<div class="footer-social">
+					<a href="#" aria-label="Instagram">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+							<rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+							<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="white"/>
+							<circle cx="17.5" cy="6.5" r="1.5" fill="white"/>
+						</svg>
+					</a>
+					<a href="#" aria-label="Facebook">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+							<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+						</svg>
+					</a>
+					<a href="#" aria-label="WhatsApp">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+							<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p>&copy; 2024 BUA'. Todos los derechos reservados.</p>
+			</div>
+		</div>
+	</footer>
+</Layout>
+
+<style>
+	:root {
+		--orange: #f79143;
+		--light-green: #d5f4ae;
+		--light-blue: #bfe3f2;
+		--dark: #333;
+		--gray: #666;
+		--light-gray: #f5f5f5;
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 20px;
+	}
+
+	/* Navigation */
+	.navbar {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		background: rgba(255, 255, 255, 0.95);
+		backdrop-filter: blur(10px);
+		box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+		z-index: 1000;
+		padding: 1rem 0;
+	}
+
+	.navbar .container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.nav-brand {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		font-size: 1.5rem;
+		font-weight: 700;
+		color: var(--orange);
+	}
+
+	.nav-menu {
+		display: flex;
+		list-style: none;
+		gap: 2rem;
+		align-items: center;
+	}
+
+	.nav-menu a {
+		text-decoration: none;
+		color: var(--dark);
+		font-weight: 500;
+		transition: color 0.3s;
+	}
+
+	.nav-menu a:hover {
+		color: var(--orange);
+	}
+
+	.btn-contact {
+		background: var(--orange);
+		color: white !important;
+		padding: 0.6rem 1.5rem;
+		border-radius: 25px;
+		transition: transform 0.3s, box-shadow 0.3s;
+	}
+
+	.btn-contact:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 5px 15px rgba(247, 145, 67, 0.3);
+	}
+
+	/* Hero Section */
+	.hero {
+		margin-top: 80px;
+		padding: 100px 0;
+		background: linear-gradient(135deg, var(--light-blue) 0%, var(--light-green) 100%);
+		position: relative;
+		overflow: hidden;
+	}
+
+	.hero::before {
+		content: '';
+		position: absolute;
+		top: -50%;
+		right: -10%;
+		width: 600px;
+		height: 600px;
+		background: var(--orange);
+		opacity: 0.1;
+		border-radius: 50%;
+	}
+
+	.hero .container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 4rem;
+		align-items: center;
+	}
+
+	.hero-content h1 {
+		font-size: 3.5rem;
+		line-height: 1.2;
+		margin-bottom: 1.5rem;
+		color: var(--dark);
+	}
+
+	.highlight {
+		color: var(--orange);
+		position: relative;
+	}
+
+	.hero-subtitle {
+		font-size: 1.25rem;
+		color: var(--gray);
+		margin-bottom: 2rem;
+	}
+
+	.hero-buttons {
+		display: flex;
+		gap: 1rem;
+		flex-wrap: wrap;
+	}
+
+	.btn {
+		padding: 1rem 2rem;
+		border-radius: 30px;
+		text-decoration: none;
+		font-weight: 600;
+		transition: all 0.3s;
+		display: inline-block;
+	}
+
+	.btn-primary {
+		background: var(--orange);
+		color: white;
+		box-shadow: 0 5px 20px rgba(247, 145, 67, 0.3);
+	}
+
+	.btn-primary:hover {
+		transform: translateY(-3px);
+		box-shadow: 0 8px 25px rgba(247, 145, 67, 0.4);
+	}
+
+	.btn-secondary {
+		background: white;
+		color: var(--orange);
+		border: 2px solid var(--orange);
+	}
+
+	.btn-secondary:hover {
+		background: var(--orange);
+		color: white;
+	}
+
+	/* Hero Image with Floating Cards */
+	.hero-image {
+		position: relative;
+		height: 500px;
+	}
+
+	.floating-card {
+		position: absolute;
+		background: white;
+		padding: 1.5rem;
+		border-radius: 20px;
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		animation: float 3s ease-in-out infinite;
+	}
+
+	.floating-card p {
+		margin-top: 1rem;
+		font-weight: 600;
+		color: var(--dark);
+	}
+
+	.card-1 {
+		top: 50px;
+		left: 50px;
+		animation-delay: 0s;
+	}
+
+	.card-2 {
+		top: 200px;
+		right: -20px;
+		animation-delay: 0.5s;
+	}
+
+	.card-3 {
+		bottom: 80px;
+		left: 100px;
+		animation-delay: 1s;
+	}
+
+	@keyframes float {
+		0%, 100% {
+			transform: translateY(0);
+		}
+		50% {
+			transform: translateY(-20px);
+		}
+	}
+
+	/* Services Section */
+	.services {
+		padding: 100px 0;
+		background: white;
+	}
+
+	.section-header {
+		text-align: center;
+		margin-bottom: 4rem;
+	}
+
+	.section-header h2 {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+		color: var(--dark);
+	}
+
+	.section-header p {
+		font-size: 1.2rem;
+		color: var(--gray);
+	}
+
+	.services-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+	}
+
+	.service-card {
+		background: var(--light-gray);
+		padding: 2.5rem;
+		border-radius: 20px;
+		transition: all 0.3s;
+		text-align: center;
+	}
+
+	.service-card:hover {
+		transform: translateY(-10px);
+		box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+		background: white;
+	}
+
+	.service-icon {
+		width: 80px;
+		height: 80px;
+		margin: 0 auto 1.5rem;
+		background: linear-gradient(135deg, var(--orange) 0%, #ff6b35 100%);
+		border-radius: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: white;
+	}
+
+	.service-card h3 {
+		font-size: 1.5rem;
+		margin-bottom: 1rem;
+		color: var(--dark);
+	}
+
+	.service-card p {
+		color: var(--gray);
+		line-height: 1.8;
+	}
+
+	/* About Section */
+	.about {
+		padding: 100px 0;
+		background: linear-gradient(135deg, var(--light-green) 0%, var(--light-blue) 100%);
+	}
+
+	.about-content {
+		display: grid;
+		grid-template-columns: 1fr 1.5fr;
+		gap: 4rem;
+		align-items: center;
+	}
+
+	.about-image {
+		display: flex;
+		justify-content: center;
+	}
+
+	.image-placeholder {
+		background: white;
+		border-radius: 30px;
+		padding: 2rem;
+		box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+	}
+
+	.about-text h2 {
+		font-size: 2.5rem;
+		margin-bottom: 1.5rem;
+		color: var(--dark);
+	}
+
+	.about-intro {
+		font-size: 1.3rem;
+		font-weight: 600;
+		color: var(--orange);
+		margin-bottom: 1.5rem;
+	}
+
+	.about-text p {
+		color: var(--gray);
+		line-height: 1.8;
+		margin-bottom: 2rem;
+	}
+
+	.credentials {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.credential-item {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		background: white;
+		padding: 1rem;
+		border-radius: 10px;
+	}
+
+	/* Testimonials Section */
+	.testimonials {
+		padding: 100px 0;
+		background: white;
+	}
+
+	.testimonials-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+	}
+
+	.testimonial-card {
+		background: var(--light-gray);
+		padding: 2.5rem;
+		border-radius: 20px;
+		transition: all 0.3s;
+	}
+
+	.testimonial-card:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+	}
+
+	.stars {
+		color: var(--orange);
+		font-size: 1.5rem;
+		margin-bottom: 1rem;
+	}
+
+	.testimonial-text {
+		color: var(--gray);
+		line-height: 1.8;
+		margin-bottom: 1.5rem;
+		font-style: italic;
+	}
+
+	.testimonial-author strong {
+		color: var(--dark);
+		display: block;
+		margin-bottom: 0.25rem;
+	}
+
+	.testimonial-author span {
+		color: var(--orange);
+		font-size: 0.9rem;
+	}
+
+	/* Contact Section */
+	.contact {
+		padding: 100px 0;
+		background: linear-gradient(135deg, var(--light-blue) 0%, var(--light-green) 100%);
+	}
+
+	.contact-content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 4rem;
+	}
+
+	.contact-info h2 {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+		color: var(--dark);
+	}
+
+	.contact-subtitle {
+		font-size: 1.2rem;
+		color: var(--gray);
+		margin-bottom: 3rem;
+	}
+
+	.contact-details {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	.contact-item {
+		display: flex;
+		gap: 1.5rem;
+		align-items: flex-start;
+	}
+
+	.contact-item svg {
+		flex-shrink: 0;
+		color: var(--orange);
+	}
+
+	.contact-item strong {
+		display: block;
+		color: var(--dark);
+		margin-bottom: 0.25rem;
+	}
+
+	.contact-item p {
+		color: var(--gray);
+	}
+
+	.contact-form {
+		background: white;
+		padding: 3rem;
+		border-radius: 30px;
+		box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+	}
+
+	.form-group {
+		margin-bottom: 1.5rem;
+	}
+
+	.form-group input,
+	.form-group select,
+	.form-group textarea {
+		width: 100%;
+		padding: 1rem;
+		border: 2px solid #e0e0e0;
+		border-radius: 10px;
+		font-family: 'Poppins', sans-serif;
+		font-size: 1rem;
+		transition: border-color 0.3s;
+	}
+
+	.form-group input:focus,
+	.form-group select:focus,
+	.form-group textarea:focus {
+		outline: none;
+		border-color: var(--orange);
+	}
+
+	.btn-full {
+		width: 100%;
+	}
+
+	/* Footer */
+	.footer {
+		background: var(--dark);
+		color: white;
+		padding: 3rem 0 1.5rem;
+	}
+
+	.footer-content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 2rem;
+	}
+
+	.footer-brand {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		font-size: 1.5rem;
+		font-weight: 700;
+	}
+
+	.footer-social {
+		display: flex;
+		gap: 1rem;
+	}
+
+	.footer-social a {
+		width: 40px;
+		height: 40px;
+		background: rgba(255, 255, 255, 0.1);
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: white;
+		transition: all 0.3s;
+	}
+
+	.footer-social a:hover {
+		background: var(--orange);
+		transform: translateY(-3px);
+	}
+
+	.footer-bottom {
+		text-align: center;
+		padding-top: 2rem;
+		border-top: 1px solid rgba(255, 255, 255, 0.1);
+		color: rgba(255, 255, 255, 0.6);
+	}
+
+	/* Responsive Design */
+	@media (max-width: 968px) {
+		.nav-menu {
+			display: none;
+		}
+
+		.hero .container,
+		.about-content,
+		.contact-content {
+			grid-template-columns: 1fr;
+		}
+
+		.hero-content h1 {
+			font-size: 2.5rem;
+		}
+
+		.hero-image {
+			height: 400px;
+		}
+
+		.services-grid,
+		.testimonials-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.footer-content {
+			flex-direction: column;
+			gap: 2rem;
+		}
+	}
+
+	@media (max-width: 640px) {
+		.hero-content h1 {
+			font-size: 2rem;
+		}
+
+		.section-header h2 {
+			font-size: 2rem;
+		}
+
+		.hero-buttons {
+			flex-direction: column;
+		}
+
+		.btn {
+			text-align: center;
+		}
+
+		.contact-form {
+			padding: 2rem;
+		}
+	}
+</style>
